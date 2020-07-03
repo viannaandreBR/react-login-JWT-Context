@@ -1,6 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { createContext,useContext } from 'react';
+
 import './App.css';
+
+const Context = createContext();
+
 
 function App() {
   const theme = 'dark';
@@ -8,20 +11,24 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <Login theme={theme}/>
 
+        <Context.Provider value={theme}>
+            <Login/>
+        </Context.Provider>
+       
       </header>
     </div>
   );
 }
 
-function Login({ theme }){
-  return <Button theme={theme}/>
+function Login(){
+  return <Button/>
 }
 
-function Button({theme}){
+function Button(){
+  const theme = useContext(Context);
   return (
-    <button>{theme}</button>
+    <button> {theme} </button>
   )
 }
 
