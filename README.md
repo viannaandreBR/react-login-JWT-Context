@@ -4,7 +4,6 @@ This project is a API demo for Security Login with Technologies: ReactJS, JWT an
 
 <img src="video-demo.gif" alt="demo React-Login" >
 
-
 ### `yarn start`
 
 Runs the app in the development mode.<br />
