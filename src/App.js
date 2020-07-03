@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <Context.Provider value={theme}>
+        <Context.Provider value={{theme, title:'Hello World'}}>
             <Login/>
         </Context.Provider>
        
@@ -26,9 +26,10 @@ function Login(){
 }
 
 function Button(){
-  const theme = useContext(Context);
+  const ctx = useContext(Context);
+  console.log(ctx);
   return (
-    <button> {theme} </button>
+    <button> {ctx.theme} - {ctx.title}</button>
   )
 }
 
