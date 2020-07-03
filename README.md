@@ -1,8 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a API demo for Security Login with Technologies: ReactJS, JWT and Context API - @viannaandreBR
 
-## Available Scripts
+## Demo ReactJS Login with JWT & Context API
 
-In the project directory, you can run:
+<img src="video-demo.gif" alt="demo React-Login" >
+
 
 ### `yarn start`
 
