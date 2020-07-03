@@ -1,6 +1,6 @@
 This project is a API demo for Security Login with Technologies: ReactJS, JWT and Context API - @viannaandreBR
 
-## Demo ReactJS Login with JWT & Context API
+## Demo ReactJS Login with JWT & Context API (Beta)
 
 <img src="video-demo.gif" alt="demo React-Login" >
 
