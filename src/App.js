@@ -3,23 +3,25 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const theme = 'dark';
+
   return (
     <div className="App">
       <header className="App-header">
-       <Login />
+       <Login theme={theme}/>
 
       </header>
     </div>
   );
 }
 
-function Login(){
-  return <Button />
+function Login({ theme }){
+  return <Button theme={theme}/>
 }
 
-function Button(){
+function Button({theme}){
   return (
-    <button>Olá Context</button>
+    <button>{theme}</button>
   )
 }
 
